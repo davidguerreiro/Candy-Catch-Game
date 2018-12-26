@@ -21,7 +21,8 @@ public class CandyScript : MonoBehaviour
     void OnTriggerEnter2D( Collider2D collider )
     {
         if ( collider.gameObject.tag == "Player" ) {
-            // increment score
+            // displays the score - Check GameManager Class.
+            GameManager.instance.IncrementScore();
             Destroy( gameObject );
         } else if ( collider.gameObject.tag == "Boundary" ) {
             // decrease lives.
