@@ -25,7 +25,7 @@ public class CandyScript : MonoBehaviour
             GameManager.instance.IncrementScore();
             Destroy( gameObject );
         } else if ( collider.gameObject.tag == "Boundary" ) {
-            // decrease lives.
+            GameManager.instance.decreaseLife();
             Destroy( gameObject );
         }
 
