@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     float maxPos;
     // Start is called before the first frame update
+
     void Start()
     {
         
@@ -32,4 +33,5 @@ public class PlayerController : MonoBehaviour
         float xPos = Mathf.Clamp( transform.position.x, -maxPos, maxPos );
         transform.position = new Vector3( xPos, transform.position.y, transform.position.z );
     }
+
 }
